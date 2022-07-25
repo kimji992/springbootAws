@@ -35,4 +35,6 @@ dependencies {
     implementation('com.h2database:h2')
     // jpa
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    // mustache
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
 }
