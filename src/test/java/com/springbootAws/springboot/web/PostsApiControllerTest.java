@@ -150,6 +150,7 @@ public class PostsApiControllerTest {
         // then
         Posts posts = postsList.get(0);
 
+        System.out.println(">>>>>> title" + posts.toString());
         System.out.println(">>>>>> createDate =" + posts.getCreatedDate() + "modifiedDate="+posts.getModifiedDate());
 
         assertThat(posts.getCreatedDate()).isAfter(now);

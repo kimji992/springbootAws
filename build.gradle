@@ -43,4 +43,6 @@ dependencies {
     implementation('org.springframework.session:spring-session-jdbc')
     // spring test
     testImplementation('org.springframework.security:spring-security-test')
+    // maria DB
+    implementation('org.mariadb.jdbc:mariadb-java-client')
 }
