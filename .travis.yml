@@ -14,6 +14,12 @@ cache:
 
 script: "./gradlew clean build"
 
+# CI 실행 완료 시 메일로 알람
+notifications:
+  email:
+    recipients:
+      - kimji992@naver.com
+
 # s3
 before_deploy:
   - zip -r springbootAws *
@@ -40,9 +46,3 @@ deploy:
     deployment_group: freelec-springboot2-webservice-group
     region: ap-northeast-2
     wait-until-deployed: true
-
-    # CI 실행 완료 시 메일로 알람
-    notifications:
-      email:
-        recipients:
-          - kimji992@naver.com
